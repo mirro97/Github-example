@@ -34,24 +34,73 @@
 </head>
 <body>
     <div class="body__container">
+
         <!-- HEADER -->
         <header class="section">
-            <div class="inner">
-                <div class="menu-group">
+            <div class="inner clearfix">
+                <div class="menu-group float--left">
                     <div class="logo">
                         <a href="#"><img src="" alt="">GitHub</a>
                     </div>
-                    <div class="main-menu">
-                        <ul>
-                            <li><a href="#">Personal</a></li>
-                            <li><a href="#">Open source</a></li>
-                            <li><a href="#">Business</a></li>
-                            <li><a href="#">Explores</a></li>
-                        </ul>
+                    <ul class="main-menu">
+                        <li><a href="#">Personal</a></li>
+                        <li><a href="#">Open source</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Explores</a></li>
+                    </ul>
+                </div>
+
+                <div class="sign-group float--right">
+                    <div class="btn-group">
+                        <a href="#" class="btn sign-in">Sign in</a>
+                        <a href="#" class="btn btn--primary sign-up">Sign up</a>
                     </div>
+                    <form id="search-form" method="POST" action="">
+                        <input type="text" id="search" class="input--text" placeholder="Search GitHub">
+                        <input type="submit" value="Submit">
+                    </form>
+                    <ul class="sub-menu">
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
                 </div>
             </div>
         </header>
+
+        <!-- VISUAL -->
+        <section class="section section--visual">
+            <div class="inner">
+                <div class="summary">
+                    <div class="summary__title">
+                        How people build software
+                    </div>
+                    <div class="summary__description">
+                        Millions of developers use GitHub to build personal projects, support their businesses, and work together on open source technologies.
+                    </div>
+                </div>
+                <form id="sign-form" method="POST" action="">
+                    <ul>
+                        <li>
+                            <input class="input--text" type="text" placeholder="Pick a username">
+                        </li>
+                        <li>
+                            <input class="input--text" type="email" placeholder="Your email address">
+                        </li>
+                        <li>
+                            <input class="input--text" type="password" placeholder="Create a password">
+                            <p class="caption">Use at least one letter, one numeral, and seven characters.</p>
+                        </li>
+                        <li>
+                            <button type="submit" class="btn btn--primary">
+                                Sign up for GitHub
+                            </button>
+                            <p class="caption">By clicking "Sign up for GitHub", you agree to our terms of service and privacy policy. We'll occasionally send you account related emails.</p>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </section>
     </div>
 </body>
 </html>
