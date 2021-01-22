@@ -8,11 +8,9 @@
       name="description"
       content="GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects."
     />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no maximum-sacle=1, minimum-sacle=1"
-    />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    
     <!-- http://ogp.me/ -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="GitHub" />
@@ -44,11 +42,10 @@
       rel="stylesheet"
     />
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" media="(max-width: 1024px)" href="css/main_medium.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="css/main_small.css">
     <script defer src="main.js"></script>
   </head>
   <body>
@@ -161,7 +158,7 @@
 
         <div class="tiles">
             <div class="inner">
-                <ul>
+                <ul class="clearfix">
                     <li>
                         <img src="img/feature-tile__build.png" alt="build">
                         <h3>For everything you build</h3>
